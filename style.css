@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Vazirmatn";
+    src: url("./fonts/webfonts/Vazirmatn-Regular.woff2");
+    font-weight: 40px;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: "Vazirmatn";
+    src: url("./fonts/webfonts/Vazirmatn-Bold.woff2");
+    font-weight: 700px;
+    font-style: normal;
+    font-display:swap;
+}
+body{
+    font-family: "Vazirmatn",sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+  
