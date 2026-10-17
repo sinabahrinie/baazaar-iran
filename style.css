@@ -16,6 +16,54 @@ body{
     font-family: "Vazirmatn",sans-serif;
     direction: rtl;
     text-align: right;
+    background-color:antiquewhite;
+    
+}
+.product-listheader{
+    display: flex;
+    justify-content:space-evenly;
+
+}
+aside{
+    float: right;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 150px;
+}
+.aside-ProductFilters{
+    display: block;
+    text-align: center;
+}
+.aside-ProductFilters-section{
+    display: flex;
+    flex-direction: column;
 }
 
-  
+img{
+    border: 1px solid rgb(71, 85, 90);
+    border-radius: 10px;
+    width: 350px;
+    height: 150px;
+}
+
+.main-search{
+    display: block;
+}
+.main-sort-select,.main-Product-Display{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.product-list{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 
+}
+.product-list-item{
+     border: 1px solid black;
+     border-radius: 10px;
+     width: fit-content;
+     
+     background-color:rgb(92, 81, 81);
+     width: 352px;
+}

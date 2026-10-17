@@ -10,117 +10,127 @@
 
 <body>
     <header>
-        <div class="container">
-            <div>ایران تک</div>
-            <div>خانه</div>
-            <div>منو</div>
-            <div>ورود</div>
-            <div>سبد خرید</div>
+        <div class="product-listheader">
+            <div class="product-listheader-logo">بازارایران</div>
+            <div class="product-listheader-home">خانه</div>
+            <div class=" product-listheader-menu">منو</div>
+            <div class="product-listheader-login">ورود</div>
+            <div class=" product-listheader-Shopping-Cart">سبد خرید</div>
         </div>
     </header>
     <aside>
-        <label>فیلتر محصولات</label>
+        <label class="aside-ProductFilters">فیلتر محصولات</label>
         <hr />
-        <section>
-            <h3>دسته بندی</h3>
-            <label>دیجیتال و گجت
+        <section class="aside-ProductFilters-section">
+            <h3 class="aside-ProductFilters-Category">دسته بندی</h3>
+            <label class="aside-ProductFilters-Digital-and-gadgets" dir="ltr">دیجیتال و گجت
                 <input type="checkbox" />
             </label>
-            <label>خانه و سبک زندگی
+            <label class="aside-ProductFilters-home-and-lifestyle" dir="ltr">خانه و سبک زندگی
                 <input type="checkbox" />
             </label>
-            <label>لوازم شخصی
+            <label class="aside-ProductFilters-Personal-items" dir="ltr">لوازم شخصی
                 <input type="checkbox" />
             </label>
         </section>
         <hr />
-        <section>
-            <h3>محدوده قیمت</h3>
-            <label>2 تا 5 میلیون
+        <section class="aside-ProductFilters-section">
+            <h3 class="aside-ProductFilters-Price-Range">محدوده قیمت</h3>
+            <label class="aside-ProductFilters-Up-to-five-million" dir="ltr">2 تا 5 میلیون
                 <input type="radio" name="محدوده قیمت" />
             </label>
-            <label>بیشتر از 5 میلیون
+            <label class="aside-ProductFilters-More-than-five-million" dir="ltr">بیشتر از 5 میلیون
                 <input type="radio" name="محدوده قیمت" />
             </label>
         </section>
-        <section>
-            <h3>امتیاز کاربران</h3>
-            <label>4 ستاره به بالا
+        <hr />
+        <section class="aside-ProductFilters-section">
+            <h3 class="aside-ProductFilters-User-Rating">امتیاز کاربران</h3>
+            <label class="aside-ProductFilters-Four-stars-and-above" dir="ltr">4 ستاره به بالا
                 <input type="checkbox" />
             </label>
         </section>
     </aside>
     <main>
-        <div>
-            <form>
-                <input />
-                <div>
-                    <label for="sort">مرتب سازی :</label>
-                    <select>
-                        <option>گران ترین</option>
-                        <option>ارزان ترین</option>
-                        <option>پرفروش ترین</option>
-                    </select>
-                </div>
-                <div>
-                    <p>
-                        نمایش<span>6</span>محصول
-                    </p>
-                </div>
-            </form>
-            <div></div>
-            <article>
-                <img />
-                <h3></h3>
-                <p></p>
-                <p></p>
-            </article>
-            <hr />
-            <article>
-                <img />
-                <h3></h3>
-                <p></p>
-                <p></p>
-            </article>
-            <hr />
-            <article>
-                <img />
-                <h3></h3>
-                <p></p>
-                <p></p>
-            </article>
-            <hr />
-            <article>
-                <img />
-                <h3></h3>
-                <p></p>
-                <p></p>
-            </article>
-            <hr />
-            <article>
-                <img />
-                <h3></h3>
-                <p></p>
-                <p></p>
-            </article>
-            <hr />
-            <article>
-                <img />
-                <h3></h3>
-                <p></p>
-                <p></p>
-            </article>
+        <div class="main">
+            <input type="search" placeholder="جستجو در محصولات..." class="main-search" />
+            <div class="main-sort">
+                <label for="sort" class="main-sort-sor">مرتب سازی :</label>
+                <select class="main-sort-select">
+                    <option>گران ترین</option>
+                    <option>ارزان ترین</option>
+                    <option>پرفروش ترین</option>
+                </select>
+            </div>
+            <div class="main-Product-Display">
+                <p>
+                    نمایش<span>6</span>محصول
+                </p>
+            </div>
+            <div class="product-list">
+                <article class="product-list-item item-1">
+                    <a target="_blank" href="./product-details/product-details-headphone.html"><img
+                            src="./image/headphones/hayabuzo-headphones-1503828_1920.jpg" alt="Wireless Headphones" />
+                        <h3>هدفون بی سیم</h3>
+                        <p>2.000.000 تومان</p>
+                        <p></p>
+                    </a>
+                </article>
+                <article class=" product-list-item item-2">
+                    <a target=" _blank" href="./product-details/product-details-smartwatch.html"><img
+                            src=" ./image/smartwatch/Huawei_Smartwatch_Fit_2.jpg" alt="Apple Smartwatch" />
+                        <h3>ساعت هوشمند اپل</h3>
+                        <p>40.000.000 تومان</p>
+                        <p></p>
+                    </a>
+                </article>
+                <article class="product-list-item item-3">
+                    <a target="_blank" href="./product-details/product-details-camera.html"><img
+                            src="./image/camera/Sony_A77.jpg" alt="Sony camera" />
+                        <h3>دوربین سونی مدل A77</h3>
+                        <p>60.000.000 تومان</p>
+                        <p></p>
+                    </a>
+                </article>
+                <article class="product-list-item item-4">
+                    <a target="_blank" href="./product-details/product-details-keyboard.html">
+                        <img src="./image/Keyboard/Apple-Wireless-Keyboard-German.png" alt="Apple Keyboard" />
+                        <h3>کیبورد اپل</h3>
+                        <p>35.000.000 تومان</p>
+                        <p></p>
+                    </a>
+                </article>
+                <article class="product-list-item item-5">
+                    <a target="_blank" href="./product-details/product-details-speaker.html"><img
+                            src="./image/Portable Speaker/daren-inshape-Twinih9fIog-unsplash.jpg" />
+                        <h3>اسپیکر بلوتوثی</h3>
+                        <p>8.000.000 تومان</p>
+                        <p></p>
+                </article>
+                <article class="product-list-item item-6">
+                    <a target="_blank" href="./product-details/product-details-mag.html"><img
+                            src="./image/Stainless Steel Travel Mug/istockphoto-655041864-1024x1024.jpg"
+                            alt="Stainless Steel Mug" />
+                        <h3>ماگ استیل</h3>
+                        <p>2.300.000 تومان</p>
+                        <p></p>
+                    </a>
+                </article>
+            </div>
         </div>
         </div>
-
     </main>
-
-
-
-
-
-
-
+    <footer>
+        <div class="footer">
+            <p>بازارایران</p>
+            <div>
+                <a href="#">پشتیبانی</a>
+                <a href="#">قوانین و شرایط</a>
+                <a href="#">اینستاگرام</a>
+            </div>
+            <p><span>&copy;</span>1405</p>
+        </div>
+    </footer>
 </body>
 
 </html>
