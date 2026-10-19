@@ -12,17 +12,85 @@
     font-style: normal;
     font-display:swap;
 }
+/* css reset start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    
+ }
+/* css reset end */
+:root{
+    --color-primariy-weaker:#df8080;
+    --color-primariy-weak:#c44b4b;
+    --color-primariy-defualt:#c32e2e;
+    --color-primariy-strong:#a02323;
+    --color-primariy-stronger:#751b1b;
+/* --------------------------------------- */
+     --color-neutral-weaker:#656a77;
+     --color-neutral-weak:#5b5d71;
+     --color-neutral-defualt:#55576d;
+     --color-neutral-strong:#50506a;
+     --color-neutral-stronger:#4B4A67;
+     --color-body-main:white;
+     
+     /* ------------------------------------- */
+     --margin-small:0 5px;
+}
+
+
 body{
     font-family: "Vazirmatn",sans-serif;
     direction: rtl;
     text-align: right;
-    background-color:antiquewhite;
-    
+    background-color:var(--color-body-main)    
 }
-.product-listheader{
+@media (prefers-color-scheme: dark) {
+    :root{
+     --color-neutral-weaker:#4B4A67;
+     --color-neutral-weak:#50506a;
+     --color-neutral-defualt:#55576d;
+     --color-neutral-strong:#5b5d71;
+     --color-neutral-stronger:#656a77;
+     /* ------------------------------- */
+     --color-body-main:black;
+    }
+}
+header{
     display: flex;
-    justify-content:space-evenly;
-
+    justify-content: space-between;
+    background-color:#4B4A67;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+li{
+    list-style: none;
+}
+header ul li{
+    display: inline-block;
+    margin:var(--margin-small);
+}
+.product-listheader-login-pricing>a{
+    margin:var(--margin-small);
+}
+header a{
+    color: white;
+}
+header ul li>.logo:first-child{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-primariy-defualt);
+}
+.product-listheader-login-pricing-link{
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    
 }
 aside{
     float: right;
@@ -39,31 +107,3 @@ aside{
     flex-direction: column;
 }
 
-img{
-    border: 1px solid rgb(71, 85, 90);
-    border-radius: 10px;
-    width: 350px;
-    height: 150px;
-}
-
-.main-search{
-    display: block;
-}
-.main-sort-select,.main-Product-Display{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-}
-.product-list{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 
-}
-.product-list-item{
-     border: 1px solid black;
-     border-radius: 10px;
-     width: fit-content;
-     
-     background-color:rgb(92, 81, 81);
-     width: 352px;
-}

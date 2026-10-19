@@ -7,49 +7,136 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-     <header>
-        <div class="container">
-            <div>بازارایران</div>
-            <div>خانه</div>
-            <div>منو</div>
-            <div>ورود</div>
-            <div>سبد خرید</div>
+     <style>
+        :root {
+            --margin-small: 0 5px;
+        }
+   
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        header ul li {
+            display: inline-block;
+            margin: var(--margin-small);
+        }
+       header ul li>.logo:first-child{
+       font-size: 30px;
+       font-weight: bold;
+       } 
+       .product-listheader-login-pricing{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        aside {
+            float: right;
+            gap: 10px;
+            padding: 20px;
+          
+        }
+        
+        .product-details-aside-camera-item {
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 200px;
+            height: 100px;
+            gap: 10px;
+            border: 2px solid #8d8383;
+            border-radius: 8px;
+            object-fit: contain;
+        }
+
+        input {
+            display: none;
+        }
+
+        .product-details-main-image-camera {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            display: inline-block;
+        }
+
+        .product-details-main-image-camera img {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        body:has(.item1 input[type="radio"]:checked) .product-details-main-image-camera img:nth-child(1) {
+            display: block;
+        }
+
+        body:has(.item2 input[type="radio"]:checked) .product-details-main-image-camera img:nth-child(2) {
+            display: block;
+        }
+
+        body:has(.item3 input[type="radio"]:checked) .product-details-main-image-camera img:nth-child(3) {
+            display: block;
+        }
+
+    </style>
+    <link rel="reset-total" href="/product-details/reset-total.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a class="logo">بازار ایران</a>
+                </li>
+                <li>
+                    <a href="#">خانه</a>
+                </li>
+                <li>
+                    <a href="#">منو</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="product-listheader-login-pricing">
+            <a href="#">ورود</a>
+            <a href="#" class="product-listheader-login-pricing-link">سبدخرید</a>
         </div>
     </header>
 
-    <main>
-        <div>
-            <div>
-                <img src="./image/camera/Sony_A77.jpg" alt="camera sony"/>
-                <img src="./image/camera/Sony_A77_II.jpg" alt="camera sony"/>
-                <img  src="./image/camera/Sony_A77_II_-_rear.jpg" alt="camera sony"/>
-                <img src="./image/camera/Sony_FE_50mm_F1.4_ZA_lens_-_ready_to_be_mounted_on_the_camera_-_DSC01107.jpg" alt="camera sony"/>
-                <h2>یک دوربین حرفه ای برای عکاسی و فیلم برداری با کیفیت عالی</h2>
-            </div>
-            
-                <div>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div>
-                    <span>60.000.000 تومان</span>
-                    <button>افزودن به سبد خرید</button>
-                </div>
-                <div>
-                    1 عدد موجود در انبار
-                </div>
-            </div>
-                        <div>
-                <span></span>
-                <p></p>
-            </div>
-        </div>
-    </main>
+    <!-- ------------------------------------------------------------------------------- -->
+    <aside>
+        <label class="product-details-aside-camera-item item1">
+            <input type="radio" name="image" checked>
+            <img src="./image/camera/Sony_A77.jpg" />
+        </label>
+
+        <label class="product-details-aside-camera-item item2">
+            <input type="radio" name="image">
+            <img src="./image/camera/Sony_A77_II.jpg" />
+        </label>
+
+        <label class="product-details-aside-camera-item item3">
+            <input type="radio" name="image">
+            <img src="./image/camera/Sony_A77_II_-_rear.jpg" />
+        </label>
+    </aside>
+    <!-- -------------------------------------- -->
+    <div class="product-details-main-image-camera">
+        <img src="./image/camera/Sony_A77.jpg" />
+        <img src="./image/camera/Sony_A77_II.jpg" />
+        <img src="./image/camera/Sony_A77_II_-_rear.jpg" />
+    </div>
+
+
+
 
 
     

@@ -7,44 +7,139 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-     <header>
-        <div class="container">
-            <div>بازارایران</div>
-            <div>خانه</div>
-            <div>منو</div>
-            <div>ورود</div>
-            <div>سبد خرید</div>
+
+
+<style>
+        :root {
+            --margin-small: 0 5px;
+        }
+   
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        header ul li {
+            display: inline-block;
+            margin: var(--margin-small);
+        }
+       header ul li>.logo:first-child{
+       font-size: 30px;
+       font-weight: bold;
+       } 
+       .product-listheader-login-pricing{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        aside {
+            float: right;
+            gap: 10px;
+            padding: 20px;
+            
+          
+        }
+        
+        .product-details-aside-Smartwatch-item {
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 200px;
+            height: 100px;
+            gap: 10px;
+            border: 2px solid #8d8383;
+            border-radius: 8px;
+            object-fit: contain;
+            margin: 20px;
+        }
+
+        input {
+            display: none;
+        }
+
+        .product-details-main-image-Smartwatch {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            display: inline-block;
+        }
+
+        .product-details-main-image-Smartwatch img {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        body:has(.item1 input[type="radio"]:checked) .product-details-main-image-Smartwatch img:nth-child(1) {
+            display: block;
+        }
+
+        body:has(.item2 input[type="radio"]:checked) .product-details-main-image-Smartwatch img:nth-child(2) {
+            display: block;
+        }
+
+        body:has(.item3 input[type="radio"]:checked) .product-details-main-image-Smartwatch img:nth-child(3) {
+            display: block;
+        }
+
+    </style>
+    <link rel="reset-total" href="/product-details/reset-total.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a class="logo">بازار ایران</a>
+                </li>
+                <li>
+                    <a href="#">خانه</a>
+                </li>
+                <li>
+                    <a href="#">منو</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="product-listheader-login-pricing">
+            <a href="#">ورود</a>
+            <a href="#" class="product-listheader-login-pricing-link">سبدخرید</a>
         </div>
     </header>
 
-    <main>
-        <div>
-            <div>
-                <img src="./image/smartwatch/Huawei_Smartwatch_Fit_2.jpg" alt="apple smart watch"/>
-                <img src="./image/smartwatch/Huawei_Smartwatch_Fit_2_(1).jpg" alt="apple smart watch"/>
-                <img src="./image/smartwatch/PineTime_smartwatch.jpg" alt="apple smart watch"/>
-                <img src="./image/smartwatch/Smart_Watches.png" alt="apple smart watch"/>
-                <h2>یک ساعت فوق العاده خاص و حرفه ای که تمام هشدار ها و حسگر ها را دارد و میتوان پاسخ گوی تلفن همراه بود.</h2>
-                <div>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div>
-                    <span>40.000.000</span>
-                    <button>افزودن به سبد خرید</button>
-                </div>
-                <div>
-                    <p>2 عدد موجود در انبار</p>
-                </div>
-            </div>
-           
-        </div>
-    </main>
+    <!-- ------------------------------------------------------------------------------- -->
+    <aside>
+        <label class="product-details-aside-Smartwatch-item item1">
+            <input type="radio" name="image" checked>
+            <img src="./image/smartwatch/PineTime_smartwatch.jpg" />
+        </label>
+
+        <label class="product-details-aside-Smartwatch-item item2">
+            <input type="radio" name="image">
+            <img src="../product-details/image/smartwatch/Huawei_Smartwatch_Fit_2_(1).jpg" />
+        </label>
+
+        <label class="product-details-aside-Smartwatch-item item3">
+            <input type="radio" name="image">
+            <img src="./image/smartwatch/Huawei_Smartwatch_Fit_2.jpg" />
+        </label>
+    </aside>
+    <!-- -------------------------------------- -->
+    <div class="product-details-main-image-Smartwatch">
+        <img src="./image/smartwatch/PineTime_smartwatch.jpg" />
+        <img src="./image/smartwatch/Huawei_Smartwatch_Fit_2_(1).jpg" />
+        <img src="./image/smartwatch/Huawei_Smartwatch_Fit_2.jpg" />
+    </div>
+
+
 
 
     
