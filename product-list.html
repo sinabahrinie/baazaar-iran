@@ -16,7 +16,7 @@
                     <a class="logo">بازار ایران</a>
                 </li>
                 <li>
-                    <a href="#">خانه</a>
+                    <a href="./product-list.html">خانه</a>
                 </li>
                 <li>
                     <a href="#">منو</a>
@@ -24,133 +24,156 @@
             </ul>
         </nav>
         <div class="product-listheader-login-pricing">
-            <a href="#">ورود</a>
-            <a href="#" class="product-listheader-login-pricing-link">سبدخرید</a>
+            <a href="./Sign-up.html">ورود</a>
+            <button class="product-listheader-login-pricing-link" type="submit">سبد خرید</button>
         </div>
     </header>
- 
-<!-- ------------------------------------------------------------------- -->
-   
+
+    <!-- ------------------------------------------------------------------- -->
 
 
 
 
 
-<div>
-<!-- ------------------------------------------------------------------------ -->
-<div class="div-aside">
-<aside>
-        <label class="aside-ProductFilters">فیلتر محصولات</label>
-        <hr />
-        <section class="aside-ProductFilters-section">
-            <h3 class="aside-ProductFilters-Category">دسته بندی</h3>
-            <label class="aside-ProductFilters-Digital-and-gadgets" dir="ltr">دیجیتال و گجت
-                <input type="checkbox" />
-            </label>
-            <label class="aside-ProductFilters-home-and-lifestyle" dir="ltr">خانه و سبک زندگی
-                <input type="checkbox" />
-            </label>
-            <label class="aside-ProductFilters-Personal-items" dir="ltr">لوازم شخصی
-                <input type="checkbox" />
-            </label>
-        </section>
-        <hr />
-        <section class="aside-ProductFilters-section">
-            <h3 class="aside-ProductFilters-Price-Range">محدوده قیمت</h3>
-            <label class="aside-ProductFilters-Up-to-five-million" dir="ltr">2 تا 5 میلیون
-                <input type="radio" name="محدوده قیمت" />
-            </label>
-            <label class="aside-ProductFilters-More-than-five-million" dir="ltr">بیشتر از 5 میلیون
-                <input type="radio" name="محدوده قیمت" />
-            </label>
-        </section>
-        <hr />
-        <section class="aside-ProductFilters-section">
-            <h3 class="aside-ProductFilters-User-Rating">امتیاز کاربران</h3>
-            <label class="aside-ProductFilters-Four-stars-and-above" dir="ltr">4 ستاره به بالا
-                <input type="checkbox" />
-            </label>
-        </section>
-    </aside>
+
+    <div class="product-list-div-aside-and-main-total">
+        <!-- ------------------------------------------------------------------------ -->
+        <div class="div-aside-and-main">
+            <div class="div-aside">
+                <aside>
+                    <h2 class="aside-ProductFilters">فیلتر محصولات</h2>
+                    <hr />
+                    <section class="aside-ProductFilters-section">
+                        <h3 class="aside-ProductFilters-Category">دسته بندی</h3>
+                        <label class="aside-ProductFilters-Digital-and-gadgets" dir="ltr">دیجیتال و گجت
+                            <input type="checkbox" />
+                        </label>
+                        <label class="aside-ProductFilters-home-and-lifestyle" dir="ltr">خانه و سبک زندگی
+                            <input type="checkbox" />
+                        </label>
+                        <label class="aside-ProductFilters-Personal-items" dir="ltr">لوازم شخصی
+                            <input type="checkbox" />
+                        </label>
+                    </section>
+                    <hr />
+                    <section class="aside-ProductFilters-section">
+                        <h3 class="aside-ProductFilters-Price-Range">محدوده قیمت</h3>
+                        <label class="aside-ProductFilters-Up-to-five-million" dir="ltr">2 تا 5 میلیون
+                            <input type="radio" name="محدوده قیمت" />
+                        </label>
+                        <label class="aside-ProductFilters-More-than-five-million" dir="ltr">بیشتر از 5 میلیون
+                            <input type="radio" name="محدوده قیمت" />
+                        </label>
+                    </section>
+                    <hr />
+                    <section class="aside-ProductFilters-section">
+                        <h3 class="aside-ProductFilters-User-Rating">امتیاز کاربران</h3>
+                        <label class="aside-ProductFilters-Four-stars-and-above" dir="ltr">4 ستاره به بالا
+                            <input type="checkbox" />
+                        </label>
+                    </section>
+                </aside>
+            </div>
+            <!-- ---------------------------------------------------------------- -->
+
+
+
+
+            <div>
+                <main>
+                    <div class="main">
+
+                        <input type="search" placeholder="جستجو در محصولات..." class="main-search" />
+                        <div class="product-list-main-sort-and-product-display">
+                            <div class="main-sort">
+                                <label for="sort" class="main-sort-sor">مرتب سازی :</label>
+                                <select class="main-sort-select">
+                                    <option>گران ترین</option>
+                                    <option>ارزان ترین</option>
+                                    <option>پرفروش ترین</option>
+                                </select>
+                            </div>
+                            <div class="main-product-display">
+                                <div>
+                                    نمایش<span>6</span>محصول
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list-article container">
+                            <article class="product-list-item item-1">
+                                <a target="_blank" href="./product-details/product-details-headphone.html"><img
+                                        src="./image/headphones/hayabuzo-headphones-1503828_1920.jpg"
+                                        alt="Wireless Headphones" />
+                                    <div class="product-list-article-subject">
+                                    <h3 class="product-list-article-subject-and-price">هدفون بی سیم</h3>
+                                    <p class="product-list-article-subject-and-price">2.000.000 تومان</p>
+                                    <p class="rating"><span>&#9733;</span>4</p>
+                                    </div>
+                                </a>
+                            </article>
+                            <article class=" product-list-item item-2">
+                                <a target="_blank" href="./product-details/product-details-smartwatch.html"><img
+                                        src="./image/smartwatch/Huawei_Smartwatch_Fit_2.jpg" alt="Apple Smartwatch" />
+                                    <div class="product-list-article-subject">
+                                    <p class="post-free">ارسال رایگان</p>
+                                    <h3 class="product-list-article-subject-and-price">ساعت هوشمند اپل</h3>
+                                    <p class="product-list-article-subject-and-price">40.000.000 تومان</p>
+                                    <p class="rating"><span>&#9733;</span>5</p>
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="product-list-item item-3">
+                                <a target="_blank" href="./product-details/product-details-camera.html"><img
+                                        src="./image/camera/Sony_A77.jpg" alt="Sony camera" />
+                                    <div class="product-list-article-subject">
+                                    <p class="post-free">ارسال رایگان</p>
+                                    <h3 class="product-list-article-subject-and-price">دوربین سونی مدل A77</h3>
+                                    <p class="product-list-article-subject-and-price">60.000.000 تومان</p>
+                                    <p class="rating"><span>&#9733;</span>4.8</p>
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="product-list-item item-4">
+                                <a target="_blank" href="./product-details/product-details-keyboard.html">
+                                    <img src="./image/Keyboard/Apple-Wireless-Keyboard-German.png"
+                                        alt="Apple Keyboard" />
+                                    <div class="product-list-article-subject">
+                                    <p class="post-free">ارسال رایگان</p>
+                                    <h3 class="product-list-article-subject-and-price">کیبورد اپل</h3>
+                                    <p class="product-list-article-subject-and-price">35.000.000 تومان</p>
+                                    <p class="rating"><span>&#9733;</span>4.3</p>
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="product-list-item item-5">
+                                <a target="_blank" href="./product-details/product-details-speaker.html"><img
+                                        src="./image/Portable Speaker/daren-inshape-Twinih9fIog-unsplash.jpg"  alt="speaker"/>
+                                    <div class="product-list-article-subject">
+                                    <h3 class="product-list-article-subject-and-price">اسپیکر بلوتوثی</h3>
+                                    <p class="product-list-article-subject-and-price">8.000.000 تومان</p>
+                                    <p class="rating"><span>&#9733;</span>3.7</p>
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="product-list-item item-6">
+                                <a target="_blank" href="./product-details/product-details-mag.html"><img
+                                        src="./image/Stainless Steel Travel Mug/istockphoto-655041864-1024x1024.jpg"
+                                        alt="Stainless Steel Mug" />
+                                    <div class="product-list-article-subject">
+                                    <h3 class="product-list-article-subject-and-price">ماگ استیل</h3>
+                                    <p class="product-list-article-subject-and-price">2.300.000 تومان</p>
+                                    <p class="rating"><span>&#9733;</span>4.4</p>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </main>
     </div>
-<!-- ---------------------------------------------------------------- -->
-
-
-
-
-<div>
-    <main>
-        <div class="main">
-            <input type="search" placeholder="جستجو در محصولات..." class="main-search" />
-            <div class="main-sort">
-                <label for="sort" class="main-sort-sor">مرتب سازی :</label>
-                <select class="main-sort-select">
-                    <option>گران ترین</option>
-                    <option>ارزان ترین</option>
-                    <option>پرفروش ترین</option>
-                </select>
-            </div>
-            <div class="main-Product-Display">
-                <p>
-                    نمایش<span>6</span>محصول
-                </p>
-            </div>
-            <div class="product-list">
-                <article class="product-list-item item-1">
-                    <a target="_blank" href="./product-details/product-details-headphone.html"><img
-                            src="./image/headphones/hayabuzo-headphones-1503828_1920.jpg" alt="Wireless Headphones" />
-                        <h3>هدفون بی سیم</h3>
-                        <p>2.000.000 تومان</p>
-                        <p></p>
-                    </a>
-                </article>
-                <article class=" product-list-item item-2">
-                    <a target=" _blank" href="./product-details/product-details-smartwatch.html"><img
-                            src=" ./image/smartwatch/Huawei_Smartwatch_Fit_2.jpg" alt="Apple Smartwatch" />
-                        <h3>ساعت هوشمند اپل</h3>
-                        <p>40.000.000 تومان</p>
-                        <p></p>
-                    </a>
-                </article>
-                <article class="product-list-item item-3">
-                    <a target="_blank" href="./product-details/product-details-camera.html"><img
-                            src="./image/camera/Sony_A77.jpg" alt="Sony camera" />
-                        <h3>دوربین سونی مدل A77</h3>
-                        <p>60.000.000 تومان</p>
-                        <p></p>
-                    </a>
-                </article>
-                <article class="product-list-item item-4">
-                    <a target="_blank" href="./product-details/product-details-keyboard.html">
-                        <img src="./image/Keyboard/Apple-Wireless-Keyboard-German.png" alt="Apple Keyboard" />
-                        <h3>کیبورد اپل</h3>
-                        <p>35.000.000 تومان</p>
-                        <p></p>
-                    </a>
-                </article>
-                <article class="product-list-item item-5">
-                    <a target="_blank" href="./product-details/product-details-speaker.html"><img
-                            src="./image/Portable Speaker/daren-inshape-Twinih9fIog-unsplash.jpg" />
-                        <h3>اسپیکر بلوتوثی</h3>
-                        <p>8.000.000 تومان</p>
-                        <p></p>
-                </article>
-                <article class="product-list-item item-6">
-                    <a target="_blank" href="./product-details/product-details-mag.html"><img
-                            src="./image/Stainless Steel Travel Mug/istockphoto-655041864-1024x1024.jpg"
-                            alt="Stainless Steel Mug" />
-                        <h3>ماگ استیل</h3>
-                        <p>2.300.000 تومان</p>
-                        <p></p>
-                    </a>
-                </article>
-            </div>
-        </div>
-        </div>
-    </main>
-</div>
-<!-- ----------------------------------------------------- -->
-</div>
+    <!-- ----------------------------------------------------- -->
+    </div>
 
 
     <!-- ---------------------------------------------------------- -->
@@ -159,9 +182,9 @@
 
 
     <footer>
-        <div class="footer">
-            <p>بازارایران</p>
-            <div>
+        <div class="product-list-footer">
+            <p>بازارایران،خرید ساده و مطمئن</p>
+            <div class="product-list-footer-link">
                 <a href="#">پشتیبانی</a>
                 <a href="#">قوانین و شرایط</a>
                 <a href="#">اینستاگرام</a>
