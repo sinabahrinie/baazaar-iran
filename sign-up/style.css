@@ -1,0 +1,168 @@
+  @font-face {
+            font-family: "Vazirmatn";
+            src: url("./fonts/webfonts/Vazirmatn-Regular.woff2");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: "Vazirmatn";
+            src: url("./fonts/webfonts/Vazirmatn-Bold.woff2");
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* css reset start */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            font-family: "Vazirmatn", sans-serif;
+            direction: rtl;
+            text-align: right;
+            background-color: var(--color-body-main);
+            min-height: 100%;
+
+        }
+
+        body {
+            min-height: 100vh;
+            /* display: flex;
+            flex-direction: column; */
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* css header start */
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 10px 20px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        header ul li {
+            display: inline-block;
+            margin: var(--margin-small);
+        }
+
+        .product-listheader-login-pricing>a {
+            margin: var(--margin-small);
+        }
+
+        .product-listheader-login-pricing-link {
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        header a {
+            color: black;
+        }
+
+        header ul li>.logo:first-child {
+            font-size: 30px;
+            font-weight: bold;
+            color: var(--color-primariy-defualt);
+        }
+
+        .product-listheader-login-pricing-link {
+            background-color: green;
+            color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+
+        }
+
+        /*css header end  */
+        /* css sign-up-form-start */
+        form {
+            background-color: aliceblue;
+            width: 90%;
+            border: 1px none black;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 70px;
+
+        }
+
+        .sign-up-form {
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            text-align: right;
+        }
+
+        input {
+            display: block;
+            width: 300px;
+            padding: 8px;
+            box-sizing: border-box;
+            text-align: left;
+            border-radius: 8px;
+        }
+
+       
+        .sign-up-button {
+            font-family: "Vazirmatn", sans-serif;
+            font-size: 40px;
+            margin-bottom: 15px;
+            
+         
+
+        }
+        button{
+            width: 120px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        button:hover{
+            cursor:pointer;
+        }
+        .button-reset{
+            background-color: red;
+            color: white;
+        }
+        .button-submit{
+            background-color: green;
+            color:white;
+        }
+
+        /* css-sign-up-form-end*/
+        /* css-footer-start */
+        .sign-up-footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: darkslategray;
+            color: white;
+            padding: 20px;
+        }
+
+        .sign-up-footer-link>a {
+            color: white;
+        }
+
+
+        /* css footer end */

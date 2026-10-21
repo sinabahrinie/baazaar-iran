@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Vazirmatn";
     src: url("./fonts/webfonts/Vazirmatn-Regular.woff2");
-    font-weight: 40;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
@@ -40,30 +40,61 @@ a{
      /* ------------------------------------- */
      --margin-small:0 5px;
 }
-        :root {
-            --margin-small: 0 5px;
-        }
+
+body{
+    
+    font-family: "Vazirmatn",sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color:var(--color-body-main);
    
-        header {
-            display: flex;
-            justify-content: space-between;
-            background-color: white;
-            margin-bottom: 10px;
-            padding: 10px 20px;
-        }
 
-        li {
-            list-style: none;
-        }
+}
 
-        header ul li {
-            display: inline-block;
-            margin: var(--margin-small);
-        }
-       header ul li>.logo:first-child{
-       font-size: 30px;
-       font-weight: bold;
-       } 
+/* css header start */
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+li{
+    list-style: none;
+}
+header ul li{
+    display: inline-block;
+    margin:var(--margin-small);
+}
+.product-listheader-login-pricing>a{
+    margin:var(--margin-small);
+}
+.product-listheader-login-pricing-link{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+header a{
+    color:black;
+}
+header ul li>.logo:first-child{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-primariy-defualt);
+}
+.product-listheader-login-pricing-link{
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+/*css header end  */
+
+
+
+
        .product-listheader-login-pricing{
             display: flex;
             justify-content: space-between;
@@ -114,7 +145,5 @@ a{
         body:has(.item3 input[type="radio"]:checked) .product-details-main-image-keyboard img:nth-child(3) {
             display: block;
         }
-        footer{
-            display: flex;
-            justify-content: space-between;
-        }
+
+   
