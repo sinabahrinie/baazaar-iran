@@ -8,155 +8,99 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 
-<body>
-  
-
- <style>
-        :root {
-            --margin-small: 0 5px;
-        }
-   
-        header {
-            display: flex;
-            justify-content: space-between;
-            background-color: white;
-            margin-bottom: 10px;
-            padding: 10px 20px;
-        }
-
-        li {
-            list-style: none;
-        }
-
-        header ul li {
-            display: inline-block;
-            margin: var(--margin-small);
-        }
-       header ul li>.logo:first-child{
-       font-size: 30px;
-       font-weight: bold;
-       } 
-       .product-listheader-login-pricing{
-            display: flex;
-            justify-content: space-between;
-        }
-
-        aside {
-            float: right;
-            gap: 10px;
-            padding: 20px;
-            
-          
-        }
-        
-        .product-details-aside-mug-item {
-            display:flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            width: 200px;
-            height: 100px;
-            gap: 10px;
-            border: 2px solid #8d8383;
-            border-radius: 8px;
-            object-fit: contain;
-            margin: 20px;
-        }
-
-        input {
-            display: none;
-        }
-
-        .product-details-main-image-mug {
-            width: 400px;
-            height: 400px;
-            background-color: white;
-            display: inline-block;
-        }
-
-        .product-details-main-image-mug img {
-            width: 100%;
-            height: 100%;
-            display: none;
-        }
-
-        body:has(.item1 input[type="radio"]:checked) .product-details-main-image-mug img:nth-child(1) {
-            display: block;
-        }
-
-        body:has(.item2 input[type="radio"]:checked) .product-details-main-image-mug img:nth-child(2) {
-            display: block;
-        }
-
-        body:has(.item3 input[type="radio"]:checked) .product-details-main-image-mug img:nth-child(3) {
-            display: block;
-        }
-
-    </style>
-    <link rel="reset-total" href="/product-details/reset-total.css" />
-</head>
-
-<body>
-
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a class="logo">بازار ایران</a>
-                </li>
-                <li>
-                    <a href="#">خانه</a>
-                </li>
-                <li>
-                    <a href="#">منو</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="product-listheader-login-pricing">
-            <a href="#">ورود</a>
-            <a href="#" class="product-listheader-login-pricing-link">سبدخرید</a>
-        </div>
-    </header>
-
-    <!-- ------------------------------------------------------------------------------- -->
-    <aside>
-        <label class="product-details-aside-mug-item item1">
-            <input type="radio" name="image" checked>
-            <img src="./image/Stainless Steel Travel Mug/istockphoto-655041864-1024x1024.jpg" />
-        </label>
-
-        <label class="product-details-aside-mug-item item2">
-            <input type="radio" name="image">
-            <img src="./image/Stainless Steel Travel Mug/istockphoto-177538015-1024x1024.jpg" />
-        </label>
-
-        <label class="product-details-aside-mug-item item3">
-            <input type="radio" name="image">
-            <img src="./image/Stainless Steel Travel Mug/istockphoto-154009518-1024x1024.jpg" />
-        </label>
-    </aside>
-    <!-- -------------------------------------- -->
-    <div class="product-details-main-image-mug">
-        <img src="./image/Stainless Steel Travel Mug/istockphoto-655041864-1024x1024.jpg" />
-        <img src="./image/Stainless Steel Travel Mug/istockphoto-177538015-1024x1024.jpg" />
-        <img src="./image/Stainless Steel Travel Mug/istockphoto-154009518-1024x1024.jpg" />
-    </div>
 
 
+    <body>
 
-
-
-    <footer>
-        <div>
-            <p>بازارایران</p>
-            <div>
-                <a href="#">پشتیبانی</a>
-                <a href="#">قوانین و شرایط</a>
-                <a href="#">اینستاگرام</a>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="logo">بازار ایران</a>
+                    </li>
+                    <li>
+                        <a href="#">خانه</a>
+                    </li>
+                    <li>
+                        <a href="#">منو</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="product-listheader-login-pricing">
+                <a href="#">ورود</a>
+                <a href="#" class="product-listheader-login-pricing-link">سبدخرید</a>
             </div>
-            <p><span>&copy;</span>1405</p>
-        </div>
-    </footer>
+        </header>
 
-</body>
+        <!-- ------------------------------------------------------------------------------- -->
+        <main>
+            <aside>
+                <label class="product-details-aside-mug-item item1">
+                    <input type="radio" name="image" checked>
+                    <img src="./image/Stainless Steel Travel Mug/istockphoto-655041864-1024x1024.jpg" />
+                </label>
+
+                <label class="product-details-aside-mug-item item2">
+                    <input type="radio" name="image">
+                    <img src="./image/Stainless Steel Travel Mug/istockphoto-177538015-1024x1024.jpg" />
+                </label>
+
+                <label class="product-details-aside-mug-item item3">
+                    <input type="radio" name="image">
+                    <img src="./image/Stainless Steel Travel Mug/istockphoto-154009518-1024x1024.jpg" />
+                </label>
+            </aside>
+            <!-- -------------------------------------- -->
+            <div class="product-details-main-image-mug sec">
+                <img src="./image/Stainless Steel Travel Mug/istockphoto-655041864-1024x1024.jpg" />
+                <img src="./image/Stainless Steel Travel Mug/istockphoto-177538015-1024x1024.jpg" />
+                <img src="./image/Stainless Steel Travel Mug/istockphoto-154009518-1024x1024.jpg" />
+            </div>
+         <section class="name-and-rating">
+            <h2>ماگ استیل البرز</h2>
+
+            <p><span class="star"> &#9733; &#9733; &#9733; &#9733;</span>
+                <span>4.4 از 5&#8729;</span>
+                <span>5 دیدگاه</span>
+            </p>
+            <p>ماگ استیل اصل که نوشیدنی را گرم نگه می دارد.</p>
+
+            <p>2.300.000 تومان
+                <span><button class="add-to-shope">افزودن به سبد خرید</button></span>
+            </p>
+        </section>
+    </main>
+    <section class="Comments">
+        <div>
+            <h3>دیدگاه کاربران</h3>
+            <p>محمد<span class="star">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
+            <p>خیلی خوبه من سرکار استفاده می کنم چای را گرم نگه میدارد.</p>
+        </div>
+        <div>
+            <p>حسین احمد پور<span class="star">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
+            <p>من همه جا با خودم دارم خیلی راضیم.</p>
+        </div>
+    </section>
+
+
+
+
+
+        <!--product-details-footer-start -->
+
+        <footer>
+            <div class="product-detais-footer-div">
+                <p>بازارایران،خرید ساده و مطمئن</p>
+                <div class="product-details-footer-link">
+                    <a href="#">پشتیبانی</a>
+                    <a href="#">قوانین و شرایط</a>
+                    <a href="#">اینستاگرام</a>
+                </div>
+                <p><span>&copy;</span>1405</p>
+            </div>
+        </footer>
+        <!-- product-details-footer-end -->
+
+    </body>
 
 </html>

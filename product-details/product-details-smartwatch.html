@@ -6,92 +6,7 @@
     <title>product-details</title>
     <link rel="stylesheet" href="./style.css" />
 </head>
-<body>
 
-
-<style>
-        :root {
-            --margin-small: 0 5px;
-        }
-   
-        header {
-            display: flex;
-            justify-content: space-between;
-            background-color: white;
-            margin-bottom: 10px;
-            padding: 10px 20px;
-        }
-
-        li {
-            list-style: none;
-        }
-
-        header ul li {
-            display: inline-block;
-            margin: var(--margin-small);
-        }
-       header ul li>.logo:first-child{
-       font-size: 30px;
-       font-weight: bold;
-       } 
-       .product-listheader-login-pricing{
-            display: flex;
-            justify-content: space-between;
-        }
-
-        aside {
-            float: right;
-            gap: 10px;
-            padding: 20px;
-            
-          
-        }
-        
-        .product-details-aside-Smartwatch-item {
-            display:flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            width: 200px;
-            height: 100px;
-            gap: 10px;
-            border: 2px solid #8d8383;
-            border-radius: 8px;
-            object-fit: contain;
-            margin: 20px;
-        }
-
-        input {
-            display: none;
-        }
-
-        .product-details-main-image-Smartwatch {
-            width: 400px;
-            height: 400px;
-            background-color: white;
-            display: inline-block;
-        }
-
-        .product-details-main-image-Smartwatch img {
-            width: 100%;
-            height: 100%;
-            display: none;
-        }
-
-        body:has(.item1 input[type="radio"]:checked) .product-details-main-image-Smartwatch img:nth-child(1) {
-            display: block;
-        }
-
-        body:has(.item2 input[type="radio"]:checked) .product-details-main-image-Smartwatch img:nth-child(2) {
-            display: block;
-        }
-
-        body:has(.item3 input[type="radio"]:checked) .product-details-main-image-Smartwatch img:nth-child(3) {
-            display: block;
-        }
-
-    </style>
-    <link rel="reset-total" href="/product-details/reset-total.css" />
-</head>
 
 <body>
 
@@ -116,6 +31,7 @@
     </header>
 
     <!-- ------------------------------------------------------------------------------- -->
+    <main>
     <aside>
         <label class="product-details-aside-Smartwatch-item item1">
             <input type="radio" name="image" checked>
@@ -133,30 +49,49 @@
         </label>
     </aside>
     <!-- -------------------------------------- -->
-    <div class="product-details-main-image-Smartwatch">
+    <div class="product-details-main-image-Smartwatch sec">
         <img src="./image/smartwatch/PineTime_smartwatch.jpg" />
         <img src="./image/smartwatch/Huawei_Smartwatch_Fit_2_(1).jpg" />
         <img src="./image/smartwatch/Huawei_Smartwatch_Fit_2.jpg" />
     </div>
+     <section class="name-and-rating">
+            <h2>ساعت هوشمند اپل</h2>
 
+            <p><span class="star"> &#9733; &#9733; &#9733; &#9733;</span>
+                <span>5 از 5&#8729;</span>
+                <span>4 دیدگاه</span>
+            </p>
+            <p>ساعت هوشمند اپل با تمام حس گرها و آلارم ها</p>
 
-
-
-    
-
-
-
-     <footer>
+            <p>40.000.000 تومان
+                <span><button class="add-to-shope">افزودن به سبد خرید</button></span>
+            </p>
+        </section>
+    </main>
+    <section class="Comments">
         <div>
-            <p>بازارایران</p>
-            <div>
-                <a href="#">پشتیبانی</a>
-                <a href="#">قوانین و شرایط</a>
-                <a href="#">اینستاگرام</a>
-            </div>
-            <p><span>&copy;</span>1405</p>
+            <h3>دیدگاه کاربران</h3>
+            <p>سارینا<span class="star">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
+            <p>مگر میشه ناراضی بود.</p>
         </div>
-    </footer>
-
+        <div>
+            <p>سبحان<span class="star">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
+            <p>معرکه هست عالیه.</p>
+        </div>
+    </section>
+<!-- HTML Footer start -->
+     
+      <footer>
+            <div class="product-detais-footer-div">
+                <p>بازارایران،خرید ساده و مطمئن</p>
+                <div class="product-details-footer-link">
+                    <a href="#">پشتیبانی</a>
+                    <a href="#">قوانین و شرایط</a>
+                    <a href="#">اینستاگرام</a>
+                </div>
+                <p><span>&copy;</span>1405</p>
+            </div>
+        </footer>
+<!-- HTML Footer end -->
 </body>
 </html>

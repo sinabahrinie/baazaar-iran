@@ -1,159 +1,108 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product-details</title>
     <link rel="stylesheet" href="./style.css" />
 </head>
-<body>
-     <style>
-        :root {
-            --margin-small: 0 5px;
-        }
-   
-        header {
-            display: flex;
-            justify-content: space-between;
-            background-color: white;
-            margin-bottom: 10px;
-            padding: 10px 20px;
-        }
+    <body>
 
-        li {
-            list-style: none;
-        }
-
-        header ul li {
-            display: inline-block;
-            margin: var(--margin-small);
-        }
-       header ul li>.logo:first-child{
-       font-size: 30px;
-       font-weight: bold;
-       } 
-       .product-listheader-login-pricing{
-            display: flex;
-            justify-content: space-between;
-        }
-
-        aside {
-            float: right;
-            gap: 10px;
-            padding: 20px;
-          
-        }
-        
-        .product-details-aside-camera-item {
-            display:flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            width: 200px;
-            height: 100px;
-            gap: 10px;
-            border: 2px solid #8d8383;
-            border-radius: 8px;
-            object-fit: contain;
-        }
-
-        input {
-            display: none;
-        }
-
-        .product-details-main-image-camera {
-            width: 400px;
-            height: 400px;
-            background-color: white;
-            display: inline-block;
-        }
-
-        .product-details-main-image-camera img {
-            width: 100%;
-            height: 100%;
-            display: none;
-        }
-
-        body:has(.item1 input[type="radio"]:checked) .product-details-main-image-camera img:nth-child(1) {
-            display: block;
-        }
-
-        body:has(.item2 input[type="radio"]:checked) .product-details-main-image-camera img:nth-child(2) {
-            display: block;
-        }
-
-        body:has(.item3 input[type="radio"]:checked) .product-details-main-image-camera img:nth-child(3) {
-            display: block;
-        }
-
-    </style>
-    <link rel="reset-total" href="/product-details/reset-total.css" />
-</head>
-
-<body>
-
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a class="logo">بازار ایران</a>
-                </li>
-                <li>
-                    <a href="#">خانه</a>
-                </li>
-                <li>
-                    <a href="#">منو</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="product-listheader-login-pricing">
-            <a href="#">ورود</a>
-            <a href="#" class="product-listheader-login-pricing-link">سبدخرید</a>
-        </div>
-    </header>
-
-    <!-- ------------------------------------------------------------------------------- -->
-    <aside>
-        <label class="product-details-aside-camera-item item1">
-            <input type="radio" name="image" checked>
-            <img src="./image/camera/Sony_A77.jpg" />
-        </label>
-
-        <label class="product-details-aside-camera-item item2">
-            <input type="radio" name="image">
-            <img src="./image/camera/Sony_A77_II.jpg" />
-        </label>
-
-        <label class="product-details-aside-camera-item item3">
-            <input type="radio" name="image">
-            <img src="./image/camera/Sony_A77_II_-_rear.jpg" />
-        </label>
-    </aside>
-    <!-- -------------------------------------- -->
-    <div class="product-details-main-image-camera">
-        <img src="./image/camera/Sony_A77.jpg" />
-        <img src="./image/camera/Sony_A77_II.jpg" />
-        <img src="./image/camera/Sony_A77_II_-_rear.jpg" />
-    </div>
-
-
-
-
-
-    
-
-
-
-     <footer>
-        <div>
-            <p>بازارایران</p>
-            <div>
-                <a href="#">پشتیبانی</a>
-                <a href="#">قوانین و شرایط</a>
-                <a href="#">اینستاگرام</a>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="logo">بازار ایران</a>
+                    </li>
+                    <li>
+                        <a href="#">خانه</a>
+                    </li>
+                    <li>
+                        <a href="#">منو</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="product-listheader-login-pricing">
+                <a href="#">ورود</a>
+                <a href="#" class="product-listheader-login-pricing-link">سبدخرید</a>
             </div>
-            <p><span>&copy;</span>1405</p>
-        </div>
-    </footer>
+        </header>
 
-</body>
+        <!-- ------------------------------------------------------------------------------- -->
+        <main>
+            <aside>
+                <label class="product-details-aside-camera-item item1">
+                    <input type="radio" name="image" checked>
+                    <img src="./image/camera/Sony_A77.jpg" />
+                </label>
+
+                <label class="product-details-aside-camera-item item2">
+                    <input type="radio" name="image">
+                    <img src="./image/camera/Sony_A77_II.jpg" />
+                </label>
+
+                <label class="product-details-aside-camera-item item3">
+                    <input type="radio" name="image">
+                    <img src="./image/camera/Sony_A77_II_-_rear.jpg" />
+                </label>
+            </aside>
+            <!-- -------------------------------------- -->
+            <div class="product-details-main-image-camera sec">
+                <img src="./image/camera/Sony_A77.jpg" />
+                <img src="./image/camera/Sony_A77_II.jpg" />
+                <img src="./image/camera/Sony_A77_II_-_rear.jpg" />
+            </div>
+         <section class="name-and-rating">
+            <h2>دوربین سونی مدل A77</h2>
+
+            <p><span class="star"> &#9733; &#9733; &#9733; &#9733;</span>
+                <span>4.8 از 5&#8729;</span>
+                <span>2 دیدگاه</span>
+            </p>
+            <p>دوربین حرفه ای سونی</p>
+
+            <p>60.000.000 تومان
+                <span><button class="add-to-shope">افزودن به سبد خرید</button></span>
+            </p>
+        </section>
+    </main>
+      <h3>دیدگاه کاربران</h3>
+    <section class="Comments">
+      
+        <div>
+            
+            <p>محمد احمدی<span class="star">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
+            <p>این دوربین خیلی عالی و حرفه ای هست.</p>
+        </div>
+        <div>
+            <p>سارا<span class="star">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
+            <p>من عکاس طبیعتم و برای  کارم فوق العاده هست.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+        <!--product-details-footer-start -->
+
+        <footer>
+            <div class="product-detais-footer-div">
+                <p>بازارایران،خرید ساده و مطمئن</p>
+                <div class="product-details-footer-link">
+                    <a href="#">پشتیبانی</a>
+                    <a href="#">قوانین و شرایط</a>
+                    <a href="#">اینستاگرام</a>
+                </div>
+                <p><span>&copy;</span>1405</p>
+            </div>
+        </footer>
+        <!-- product-details-footer-end -->
+
+    </body>
+
 </html>

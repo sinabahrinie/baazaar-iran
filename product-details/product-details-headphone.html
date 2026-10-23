@@ -7,152 +7,97 @@
     <title>product-details</title>
     <link rel="stylesheet" href="./style.css" />
 </head>
+    <body>
 
-<body>
-   <style>
-        :root {
-            --margin-small: 0 5px;
-        }
-   
-        header {
-            display: flex;
-            justify-content: space-between;
-            background-color: white;
-            margin-bottom: 10px;
-            padding: 10px 20px;
-        }
-
-        li {
-            list-style: none;
-        }
-
-        header ul li {
-            display: inline-block;
-            margin: var(--margin-small);
-        }
-       header ul li>.logo:first-child{
-       font-size: 30px;
-       font-weight: bold;
-       } 
-       .product-listheader-login-pricing{
-            display: flex;
-            justify-content: space-between;
-        }
-
-        aside {
-            float: right;
-            gap: 10px;
-            padding: 20px;
-          
-        }
-        
-        .product-details-aside-headphone-item {
-            display:flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            width: 200px;
-            height: 100px;
-            gap: 10px;
-            border: 2px solid #8d8383;
-            border-radius: 8px;
-            object-fit: contain;
-        }
-
-        input {
-            display: none;
-        }
-
-        .product-details-main-image-headphone {
-            width: 400px;
-            height: 400px;
-            background-color: white;
-            display: inline-block;
-        }
-
-        .product-details-main-image-headphone img {
-            width: 100%;
-            height: 100%;
-            display: none;
-        }
-
-        body:has(.item1 input[type="radio"]:checked) .product-details-main-image-headphone img:nth-child(1) {
-            display: block;
-        }
-
-        body:has(.item2 input[type="radio"]:checked) .product-details-main-image-headphone img:nth-child(2) {
-            display: block;
-        }
-
-        body:has(.item3 input[type="radio"]:checked) .product-details-main-image-headphone img:nth-child(3) {
-            display: block;
-        }
-
-    </style>
-    <link rel="reset-total" href="/product-details/reset-total.css" />
-</head>
-
-<body>
-
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a class="logo">بازار ایران</a>
-                </li>
-                <li>
-                    <a href="#">خانه</a>
-                </li>
-                <li>
-                    <a href="#">منو</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="product-listheader-login-pricing">
-            <a href="#">ورود</a>
-            <a href="#" class="product-listheader-login-pricing-link">سبدخرید</a>
-        </div>
-    </header>
-
-    <!-- ------------------------------------------------------------------------------- -->
-    <aside>
-        <label class="product-details-aside-headphone-item item1">
-            <input type="radio" name="image" checked>
-            <img src="../product-details/image/headphones/istockphoto-149824167-1024x1024.jpg" />
-        </label>
-
-        <label class="product-details-aside-headphone-item item2">
-            <input type="radio" name="image">
-            <img src="./image/headphones/Headphones_on_white_background.jpg" />
-        </label>
-
-        <label class="product-details-aside-headphone-item item3">
-            <input type="radio" name="image">
-            <img src="./image/headphones/hayabuzo-headphones-1503828_1920.jpg" />
-        </label>
-    </aside>
-    <!-- -------------------------------------- -->
-    <div class="product-details-main-image-headphone">
-        <img src="./image/headphones/istockphoto-149824167-1024x1024.jpg" />
-        <img src="./image/headphones/Headphones_on_white_background.jpg" />
-        <img src="./image/headphones/hayabuzo-headphones-1503828_1920.jpg" />
-    </div>
-
-
-
-
-
-    <footer>
-        <div>
-            <p>بازارایران</p>
-            <div>
-                <a href="#">پشتیبانی</a>
-                <a href="#">قوانین و شرایط</a>
-                <a href="#">اینستاگرام</a>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="logo">بازار ایران</a>
+                    </li>
+                    <li>
+                        <a href="#">خانه</a>
+                    </li>
+                    <li>
+                        <a href="#">منو</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="product-listheader-login-pricing">
+                <a href="#">ورود</a>
+                <a href="#" class="product-listheader-login-pricing-link">سبدخرید</a>
             </div>
-            <p><span>&copy;</span>1405</p>
-        </div>
-    </footer>
+        </header>
 
-</body>
+        <!-- ------------------------------------------------------------------------------- -->
+        <main>
+            <aside>
+                <label class="product-details-aside-headphone-item item1">
+                    <input type="radio" name="image" checked>
+                    <img src="../product-details/image/headphones/istockphoto-149824167-1024x1024.jpg" />
+                </label>
+
+                <label class="product-details-aside-headphone-item item2">
+                    <input type="radio" name="image">
+                    <img src="./image/headphones/Headphones_on_white_background.jpg" />
+                </label>
+
+                <label class="product-details-aside-headphone-item item3">
+                    <input type="radio" name="image">
+                    <img src="./image/headphones/hayabuzo-headphones-1503828_1920.jpg" />
+                </label>
+            </aside>
+            <!-- -------------------------------------- -->
+            <div class="product-details-main-image-headphone sec">
+                <img src="./image/headphones/istockphoto-149824167-1024x1024.jpg" />
+                <img src="./image/headphones/Headphones_on_white_background.jpg" />
+                <img src="./image/headphones/hayabuzo-headphones-1503828_1920.jpg" />
+            </div>
+             <section class="name-and-rating">
+            <h2>هدفون بی سیم آریا</h2>
+
+            <p><span class="star"> &#9733; &#9733; &#9733; &#9733;</span>
+                <span>4 از 5&#8729;</span>
+                <span>12 دیدگاه</span>
+            </p>
+            <p>هدفون بی سیم مناسب برای  افرادی که به صورت طولانی  هدفون  روی گوش دارند.</p>
+
+            <p>2.000.000 تومان
+                <span><button class="add-to-shope">افزودن به سبد خرید</button></span>
+            </p>
+        </section>
+    </main>
+    <section class="Comments">
+        <div>
+            <h3>دیدگاه کاربران</h3>
+            <p>اکبر حسنی<span class="star">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
+            <p>قیمت مناسب بود و رنگ دلخواهم را داشت.</p>
+        </div>
+        <div>
+            <p>محسن ابراهیم زاده<span class="star">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
+            <p>خیلی خوبه من راظیم از هزینه ای که کردم.</p>
+        </div>
+    </section>
+         
+
+
+
+
+        <!--product-details-footer-start -->
+
+        <footer>
+            <div class="product-detais-footer-div">
+                <p>بازارایران،خرید ساده و مطمئن</p>
+                <div class="product-details-footer-link">
+                    <a href="#">پشتیبانی</a>
+                    <a href="#">قوانین و شرایط</a>
+                    <a href="#">اینستاگرام</a>
+                </div>
+                <p><span>&copy;</span>1405</p>
+            </div>
+        </footer>
+        <!-- product-details-footer-end -->
+
+    </body>
 
 </html>

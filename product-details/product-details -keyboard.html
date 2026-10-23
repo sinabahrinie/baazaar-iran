@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product-details</title> 
+    <title>product-details</title>
     <link rel="stylesheet" href="./style.css" />
-</head>
+    </head>
 
 <body>
-
     <header>
         <nav>
             <ul>
@@ -31,36 +30,60 @@
     </header>
 
     <!-- ------------------------------------------------------------------------------- -->
-    <aside>
-        <label class="product-details-aside-keyboard-item item1">
-            <input type="radio" name="image" checked>
+    <main>
+        <aside>
+            <label class="product-details-aside-keyboard-item item1">
+                <input type="radio" name="image" checked>
+                <img src="./image/Keyboard/Apple-Wireless-Keyboard-German.png" />
+            </label>
+
+            <label class="product-details-aside-keyboard-item item2">
+                <input type="radio" name="image">
+                <img src="./image/Keyboard/Apple-wireless-keyboard.jpg" />
+            </label>
+
+            <label class="product-details-aside-keyboard-item item3">
+                <input type="radio" name="image">
+                <img src="./image/Keyboard/Apple_Keyboard_with_Arabic_Letters.jpg" />
+            </label>
+        </aside>
+        <!-- -------------------------------------- -->
+        <div class="product-details-main-image-keyboard sec">
             <img src="./image/Keyboard/Apple-Wireless-Keyboard-German.png" />
-        </label>
-
-        <label class="product-details-aside-keyboard-item item2">
-            <input type="radio" name="image">
             <img src="./image/Keyboard/Apple-wireless-keyboard.jpg" />
-        </label>
-
-        <label class="product-details-aside-keyboard-item item3">
-            <input type="radio" name="image">
             <img src="./image/Keyboard/Apple_Keyboard_with_Arabic_Letters.jpg" />
-        </label>
-    </aside>
-    <!-- -------------------------------------- -->
-    <div class="product-details-main-image-keyboard">
-        <img src="./image/Keyboard/Apple-Wireless-Keyboard-German.png" />
-        <img src="./image/Keyboard/Apple-wireless-keyboard.jpg" />
-        <img src="./image/Keyboard/Apple_Keyboard_with_Arabic_Letters.jpg" />
-    </div>
+        </div>
+        <section class="name-and-rating">
+            <h2>کیبورد اپل </h2>
 
+            <p><span class="star"> &#9733; &#9733; &#9733; &#9733;</span>
+                <span>4.3 از 5&#8729;</span>
+                <span>5 دیدگاه</span>
+            </p>
+            <p>کیبورد اپل فوق العاده عالی و خوش استایل باسبک خاص</p>
 
+            <p>35.000.000 تومان
+                <span><button class="add-to-shope">افزودن به سبد خرید</button></span>
+            </p>
+        </section>
+    </main>
+    <section class="Comments">
+        <div>
+            <h3>دیدگاه کاربران</h3>
+            <p>حامی کریمی<span class="star">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
+            <p>کیفیت خیلی خوبی داره احساس خوبی دارم زمانی که از این کیبورد استفاده می کنم.</p>
+        </div>
+        <div>
+            <p>امیر<span class="star">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
+            <p>خوبه و زود به دستم رسید و کار کردن باهاش راحته</p>
+        </div>
+    </section>
 
-<!--product-details-footer-start -->
+    <!--product-details-footer-start -->
 
     <footer>
         <div class="product-detais-footer-div">
-            <p>بازارایران</p>
+            <p>بازارایران،خرید ساده و مطمئن</p>
             <div class="product-details-footer-link">
                 <a href="#">پشتیبانی</a>
                 <a href="#">قوانین و شرایط</a>
@@ -69,7 +92,7 @@
             <p><span>&copy;</span>1405</p>
         </div>
     </footer>
-<!-- product-details-footer-end -->
+    <!-- product-details-footer-end -->
 </body>
 
 </html>
